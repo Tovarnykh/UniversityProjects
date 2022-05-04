@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainpage" prefHeight="533.0" prefWidth="800.0" style="-fx-background-image: url(https://nuft.edu.ua/assets/images/News/2019/07/12/top-20-1-12-07-2019.jpg);" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.unilabsoop.LabsController">
+   <children>
+     <MenuBar prefHeight="25.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+       <menus>
+         <Menu mnemonicParsing="false" text="Меню">
+           <items>
+             <MenuItem mnemonicParsing="false" onAction="#onCloseClicked" text="Close" />
+
+           </items>
+         </Menu>
+         <Menu mnemonicParsing="false" text="Лабораторні">
+           <items>
+                  <MenuItem mnemonicParsing="false" onAction="#onCourseWork" text="Курсова Робота" />
+             <MenuItem mnemonicParsing="false" onAction="#onItemLab1Click" text="Лабораторна №1" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab2Click" text="Лабораторна №2" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab3Click" text="Лабораторна №3" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab4Click" text="Лабораторна №4" />
+                  <Menu mnemonicParsing="false" text="Лабораторна №5">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#onItemLab5_1Click" text="Лабораторна №5.1" />
+                        <MenuItem mnemonicParsing="false" onAction="#onItemLab5_2Click" text="Лабораторна №5.2" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab6" text="Лабораторна №6" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab7" text="Лабораторна №7" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab8" text="Лабораторна №8" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab9" text="Лабораторна №9" />
+           </items>
+         </Menu>
+       </menus>
+     </MenuBar>
+      <Pane layoutX="22.0" layoutY="47.0" prefHeight="464.0" prefWidth="758.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a7acb0ed" height="464.0" stroke="BLACK" strokeType="INSIDE" width="758.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#979797" height="354.0" layoutX="48.0" layoutY="88.0" opacity="0.43" stroke="BLACK" strokeType="INSIDE" width="234.0" />
+            <Label layoutX="240.0" layoutY="14.0" text="Лабораторна Робота №8" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label layoutX="127.0" layoutY="103.0" text="Завдання 1" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Label>
+            <TextField fx:id="atextfield8" layoutX="89.0" layoutY="133.0" prefHeight="25.0" prefWidth="155.0" />
+            <Button layoutX="89.0" layoutY="173.0" mnemonicParsing="false" onMouseClicked="#onLab8ButtonSave1Click" prefHeight="25.0" prefWidth="68.0" text="Додати" />
+            <Button layoutX="177.0" layoutY="173.0" mnemonicParsing="false" onMouseClicked="#onLab8ButtonClearClick" text="Очистити" />
+            <TextArea fx:id="ansarea1l8" layoutX="65.0" layoutY="214.0" prefHeight="207.0" prefWidth="197.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#979797" height="354.0" layoutX="312.0" layoutY="88.0" opacity="0.43" stroke="BLACK" strokeType="INSIDE" width="404.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#343536" height="69.0" layoutX="380.0" layoutY="166.0" opacity="0.11" stroke="BLACK" strokeType="INSIDE" width="262.0" />
+            <Label layoutX="483.0" layoutY="103.0" text="Завдання 2" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="time" layoutX="386.0" layoutY="153.0" prefHeight="91.0" prefWidth="262.0" textFill="#6b6b6b">
+               <font>
+                  <Font name="Arial" size="65.0" />
+               </font></Label>
+            <RadioButton fx:id="tougle1" layoutX="84.0" layoutY="58.0" mnemonicParsing="false" text="Активувати завдання 1" textFill="WHITE" />
+            <RadioButton fx:id="tougle2" layoutX="448.0" layoutY="58.0" mnemonicParsing="false" onAction="#loadTime" text="Активувати завдання 2" textFill="WHITE" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#343536" height="69.0" layoutX="383.0" layoutY="285.0" opacity="0.11" stroke="BLACK" strokeType="INSIDE" width="262.0" />
+            <Label fx:id="time2" layoutX="389.0" layoutY="273.0" prefHeight="91.0" prefWidth="262.0" textFill="#6b6b6b">
+               <font>
+                  <Font name="Arial" size="50.0" />
+               </font>
+            </Label>
+            <TextField fx:id="timetextfield8" layoutX="383.0" layoutY="388.0" promptText="HH:mm:ss" />
+            <Button layoutX="582.0" layoutY="388.0" mnemonicParsing="false" onAction="#onLab8ButtonTimeChangeClick" text="Змінити" />
+         </children></Pane>
+   </children>
+</AnchorPane>

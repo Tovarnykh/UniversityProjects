@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainpage" prefHeight="533.0" prefWidth="800.0" style="-fx-background-image: url(https://nuft.edu.ua/assets/images/News/2019/07/12/top-20-1-12-07-2019.jpg);" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.unilabsoop.LabsController">
+   <children>
+     <MenuBar prefHeight="25.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+       <menus>
+         <Menu mnemonicParsing="false" text="Меню">
+           <items>
+             <MenuItem mnemonicParsing="false" onAction="#onCloseClicked" text="Close" />
+
+           </items>
+         </Menu>
+         <Menu mnemonicParsing="false" text="Лабораторні">
+           <items>
+                  <MenuItem mnemonicParsing="false" onAction="#onCourseWork" text="Курсова Робота" />
+             <MenuItem mnemonicParsing="false" onAction="#onItemLab1Click" text="Лабораторна №1" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab2Click" text="Лабораторна №2" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab3Click" text="Лабораторна №3" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab4Click" text="Лабораторна №4" />
+                  <Menu mnemonicParsing="false" text="Лабораторна №5">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#onItemLab5_1Click" text="Лабораторна №5.1" />
+                        <MenuItem mnemonicParsing="false" onAction="#onItemLab5_2Click" text="Лабораторна №5.2" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab6" text="Лабораторна №6" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab7" text="Лабораторна №7" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab8" text="Лабораторна №8" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab9" text="Лабораторна №9" />
+           </items>
+         </Menu>
+       </menus>
+     </MenuBar>
+      <Pane layoutX="22.0" layoutY="47.0" prefHeight="464.0" prefWidth="758.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a7acb0ed" height="464.0" stroke="BLACK" strokeType="INSIDE" width="758.0" />
+            <Label layoutX="246.0" layoutY="23.0" text="Лабораторна Робота №5" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <TextArea fx:id="ansarea5_1" layoutX="171.0" layoutY="339.0" prefHeight="95.0" prefWidth="417.0" promptText="Масив">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextArea>
+            <Label layoutX="175.0" layoutY="68.0" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="tougle1" layoutX="169.0" layoutY="66.0" mnemonicParsing="false" onAction="#onLab5_1RadioButtonClick" text="Алгоритм 1(для одновимірного)" textFill="WHITE" />
+            <RadioButton fx:id="tougle2" layoutX="392.0" layoutY="66.0" mnemonicParsing="false" onAction="#onLab5_1RadioButtonClick" text="Алгоритм 2 (для двовимірного)" textFill="WHITE" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9e9e9e" height="210.0" layoutX="169.0" layoutY="95.0" opacity="0.36" stroke="BLACK" strokeType="INSIDE" width="417.0" />
+            <Label layoutX="312.0" layoutY="106.0" text="Створити новий масив" textFill="WHITE" />
+            <TextField fx:id="cxtextfieldl5_1" layoutX="228.0" layoutY="129.0" prefHeight="25.0" prefWidth="114.0" promptText="Кількість стовпців" />
+            <Button layoutX="342.0" layoutY="163.0" mnemonicParsing="false" onMouseClicked="#onLab5_1ButtonCreateClick" text="Створити" />
+            <Line endX="100.0" layoutX="379.0" layoutY="202.0" startX="-100.0" stroke="WHITE" />
+            <Label layoutX="327.0" layoutY="210.0" text="Редагувати масив" textFill="WHITE" />
+            <TextField layoutX="245.0" layoutY="233.0" prefHeight="25.0" prefWidth="68.0" promptText="Індекс x" fx:id="xtextfieldl5_1" />
+            <TextField fx:id="ntextfieldl5_1" layoutX="438.0" layoutY="233.0" prefHeight="25.0" prefWidth="68.0" promptText="Значення" />
+            <Button layoutX="289.0" layoutY="268.0" mnemonicParsing="false" onMouseClicked="#onLab5_1ButtonEditClick" text="Редагувати" />
+            <TextField fx:id="cytextfieldl5_1" layoutX="409.0" layoutY="129.0" prefHeight="25.0" prefWidth="114.0" promptText="Кількість рядків" />
+            <Label fx:id="masstipelabel_lab5_1" layoutX="175.0" layoutY="316.0" />
+            <TextField fx:id="ytextfieldl5_1" layoutX="341.0" layoutY="233.0" prefHeight="25.0" prefWidth="68.0" promptText="Індекс y" />
+            <Button layoutX="388.0" layoutY="268.0" mnemonicParsing="false" onMouseClicked="#onLab5_1ButtonSortClick" text="Сортувати" />
+         </children></Pane>
+   </children>
+</AnchorPane>

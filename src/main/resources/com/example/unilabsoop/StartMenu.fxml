@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainpage" prefHeight="533.0" prefWidth="800.0" style="-fx-background-image: url(https://nuft.edu.ua/assets/images/News/2019/07/12/top-20-1-12-07-2019.jpg);" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.unilabsoop.LabsController">
+   <children>
+     <MenuBar prefHeight="25.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+       <menus>
+         <Menu mnemonicParsing="false" text="Меню">
+           <items>
+                  <MenuItem mnemonicParsing="false" onAction="#fileChooser" text="Обрати файл" />
+             <MenuItem mnemonicParsing="false" onAction="#onCloseClicked" text="Close" />
+           </items>
+         </Menu>
+         <Menu mnemonicParsing="false" text="Лабораторні">
+           <items>
+                  <MenuItem mnemonicParsing="false" onAction="#onCourseWork" text="Курсова Робота" />
+             <MenuItem fx:id="labmenuitem1" mnemonicParsing="false" onAction="#onItemLab1Click" text="Лабораторна №1" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab2Click" text="Лабораторна №2" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab3Click" text="Лабораторна №3" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab4Click" text="Лабораторна №4" />
+                  <Menu mnemonicParsing="false" text="Лабораторна №5">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#onItemLab5_1Click" text="Лабораторна №5.1" />
+                        <MenuItem mnemonicParsing="false" onAction="#onItemLab5_2Click" text="Лабораторна №5.2" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab6" text="Лабораторна №6" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab7" text="Лабораторна №7" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab8" text="Лабораторна №8" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab9" text="Лабораторна №9" />
+
+           </items>
+         </Menu>
+       </menus>
+     </MenuBar>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1" height="447.0" layoutX="31.0" layoutY="54.0" opacity="0.93" stroke="#cdcdcd" strokeType="INSIDE" width="738.0" />
+      <TableView fx:id="tableView" layoutX="40.0" layoutY="92.0" prefHeight="336.0" prefWidth="511.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" onEditCommit="#changeNameCellEvent" prefWidth="89.0" text="Назва" />
+          <TableColumn fx:id="cityColumn" onEditCommit="#changeCityCellEvent" prefWidth="88.0" text="Місто" />
+            <TableColumn fx:id="adressColumn" onEditCommit="#changeAdressCellEvent" prefWidth="85.0" text="Адреса" />
+            <TableColumn fx:id="themeColumn" onEditCommit="#changeThemeCellEvent" prefWidth="105.0" text="Тематика" />
+            <TableColumn fx:id="formeColumn" onEditCommit="#changeFormCellEvent" prefWidth="85.0" text="Форма" />
+            <TableColumn fx:id="costColumn" onEditCommit="#changeCostCellEvent" prefWidth="58.0" text="Ціна" />
+        </columns>
+      </TableView>
+      <Label layoutX="50.0" layoutY="59.0" text="Довідник музеїв України">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="435.0" text="Номер" />
+      <TextField fx:id="deletefield0" layoutX="50.0" layoutY="452.0" prefHeight="25.0" prefWidth="28.0" />
+      <Button layoutX="83.0" layoutY="452.0" mnemonicParsing="false" onAction="#deleteElement" text="Видалити" />
+      <TextField fx:id="searchfield0" layoutX="554.0" layoutY="452.0" />
+      <Button layoutX="702.0" layoutY="452.0" mnemonicParsing="false" onAction="#searchElement" text="пошук" />
+      <TextField fx:id="namefield0" layoutX="587.0" layoutY="131.0" />
+      <Label layoutX="627.0" layoutY="113.0" text="Назва музею" />
+      <TextField fx:id="cityfield0" layoutX="587.0" layoutY="173.0" />
+      <TextField fx:id="adressfield0" layoutX="587.0" layoutY="215.0" />
+      <TextField fx:id="themefield0" layoutX="587.0" layoutY="256.0" />
+      <TextField fx:id="formfield0" layoutX="587.0" layoutY="298.0" />
+      <TextField fx:id="costfield0" layoutX="588.0" layoutY="338.0" />
+      <Button layoutX="635.0" layoutY="371.0" mnemonicParsing="false" onAction="#addNewObject" text="Додати" />
+      <Label layoutX="646.0" layoutY="157.0" text="Місто" />
+      <Label layoutX="642.0" layoutY="198.0" text="Адреса" />
+      <Label layoutX="636.0" layoutY="240.0" text="Тематика" />
+      <Label layoutX="615.0" layoutY="282.0" text="Форма власності" />
+      <Label layoutX="615.0" layoutY="322.0" text="Вартість квитка" />
+      <Button layoutX="163.0" layoutY="452.0" mnemonicParsing="false" onAction="#refresh" text="refresh" />
+   </children>
+</AnchorPane>

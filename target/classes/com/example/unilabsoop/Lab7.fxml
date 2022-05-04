@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainpage" prefHeight="533.0" prefWidth="800.0" style="-fx-background-image: url(https://nuft.edu.ua/assets/images/News/2019/07/12/top-20-1-12-07-2019.jpg);" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.unilabsoop.LabsController">
+   <children>
+     <MenuBar prefHeight="25.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+       <menus>
+         <Menu mnemonicParsing="false" text="Меню">
+           <items>
+             <MenuItem mnemonicParsing="false" onAction="#onCloseClicked" text="Close" />
+
+           </items>
+         </Menu>
+         <Menu mnemonicParsing="false" text="Лабораторні">
+           <items>
+                  <MenuItem mnemonicParsing="false" onAction="#onCourseWork" text="Курсова Робота" />
+             <MenuItem mnemonicParsing="false" onAction="#onItemLab1Click" text="Лабораторна №1" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab2Click" text="Лабораторна №2" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab3Click" text="Лабораторна №3" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab4Click" text="Лабораторна №4" />
+                  <Menu mnemonicParsing="false" text="Лабораторна №5">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#onItemLab5_1Click" text="Лабораторна №5.1" />
+                        <MenuItem mnemonicParsing="false" onAction="#onItemLab5_2Click" text="Лабораторна №5.2" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab6" text="Лабораторна №6" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab7" text="Лабораторна №7" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab8" text="Лабораторна №8" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab9" text="Лабораторна №9" />
+           </items>
+         </Menu>
+       </menus>
+     </MenuBar>
+      <Pane layoutX="22.0" layoutY="47.0" prefHeight="464.0" prefWidth="758.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a7acb0ed" height="464.0" stroke="BLACK" strokeType="INSIDE" width="758.0" />
+            <Label layoutX="246.0" layoutY="23.0" text="Лабораторна Робота №7" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Button fx:id="bananabutton" layoutX="356.0" layoutY="96.0" mnemonicParsing="false" onMouseClicked="#onLab7ButtonBananaClick" prefHeight="56.0" prefWidth="58.0" text="Banana" />
+            <Button fx:id="pearbutton" layoutX="356.0" layoutY="327.0" mnemonicParsing="false" onMouseClicked="#onLab7ButtonPearClick" prefHeight="56.0" prefWidth="58.0" text="Pear" />
+            <Button fx:id="berrybutton" layoutX="217.0" layoutY="204.0" mnemonicParsing="false" onMouseClicked="#onLab7ButtonBerryClick" prefHeight="56.0" prefWidth="58.0" text="Berry" />
+            <Button fx:id="applebutton" layoutX="494.0" layoutY="204.0" mnemonicParsing="false" onMouseClicked="#onLab7ButtonAppleClick" prefHeight="56.0" prefWidth="58.0" text="Apple" />
+            <Label fx:id="label3lab7" layoutX="433.0" layoutY="294.0" />
+            <Label fx:id="label2lab7" layoutX="433.0" layoutY="169.0" />
+            <Label fx:id="label1lab7" layoutX="294.0" layoutY="169.0" />
+            <Label fx:id="label4lab7" layoutX="294.0" layoutY="294.0" />
+         </children></Pane>
+   </children>
+</AnchorPane>

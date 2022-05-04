@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainpage" prefHeight="533.0" prefWidth="800.0" style="-fx-background-image: url(https://nuft.edu.ua/assets/images/News/2019/07/12/top-20-1-12-07-2019.jpg);" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.unilabsoop.LabsController">
+   <children>
+     <MenuBar prefHeight="25.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+       <menus>
+         <Menu mnemonicParsing="false" text="Меню">
+           <items>
+             <MenuItem mnemonicParsing="false" onAction="#onCloseClicked" text="Close" />
+
+           </items>
+         </Menu>
+         <Menu mnemonicParsing="false" text="Лабораторні">
+           <items>
+                  <MenuItem mnemonicParsing="false" onAction="#onCourseWork" text="Курсова Робота" />
+             <MenuItem mnemonicParsing="false" onAction="#onItemLab1Click" text="Лабораторна №1" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab2Click" text="Лабораторна №2" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab3Click" text="Лабораторна №3" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab4Click" text="Лабораторна №4" />
+                  <Menu mnemonicParsing="false" text="Лабораторна №5">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#onItemLab5_1Click" text="Лабораторна №5.1" />
+                        <MenuItem mnemonicParsing="false" onAction="#onItemLab5_2Click" text="Лабораторна №5.2" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab6" text="Лабораторна №6" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab7" text="Лабораторна №7" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab8" text="Лабораторна №8" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab9" text="Лабораторна №9" />
+           </items>
+         </Menu>
+       </menus>
+     </MenuBar>
+      <Pane layoutX="22.0" layoutY="47.0" prefHeight="464.0" prefWidth="758.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a7acb0ed" height="464.0" stroke="BLACK" strokeType="INSIDE" width="758.0" />
+            <Button layoutX="331.0" layoutY="393.0" mnemonicParsing="false" onMouseClicked="#onLab6ButtonClick" prefHeight="44.0" prefWidth="93.0" text="Обчислити" />
+            <Label layoutX="246.0" layoutY="23.0" text="Лабораторна Робота №6" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Separator layoutX="373.0" layoutY="70.0" orientation="VERTICAL" prefHeight="193.0" prefWidth="3.0" />
+            <TextArea fx:id="ansarea6" layoutX="255.0" layoutY="284.0" prefHeight="97.0" prefWidth="242.0" promptText="Відповідь">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextArea>
+            <Label layoutX="175.0" layoutY="68.0" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="tougle1" layoutX="180.0" layoutY="73.0" mnemonicParsing="false" text="Завдання 1" textFill="#ebebeb" />
+            <RadioButton fx:id="tougle2" layoutX="482.0" layoutY="73.0" mnemonicParsing="false" text="Завдання 2" textFill="#ebebeb" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9e9e9e" height="156.0" layoutX="130.0" layoutY="99.0" opacity="0.36" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <TextField fx:id="atextfield6" layoutX="149.0" layoutY="213.0" prefHeight="25.0" prefWidth="162.0" promptText="Введіть символьний рядок" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9e9e9e" height="156.0" layoutX="423.0" layoutY="99.0" opacity="0.36" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <TextField fx:id="btextfield6" layoutX="442.0" layoutY="213.0" prefHeight="25.0" prefWidth="162.0" promptText="Введіть символьний рядок" />
+            <Label layoutX="154.0" layoutY="120.0" text="Введіть речення, програма " />
+            <Label layoutX="151.0" layoutY="145.0" text="знайде усі слова із літерами:" />
+            <Label layoutX="150.0" layoutY="169.0" text="'2', '4', '6, '8' та літери 'С' та 'Ш" />
+            <Label layoutX="425.0" layoutY="120.0" text="Введіть речення через ',', програма " />
+            <Label layoutX="445.0" layoutY="145.0" text="знайде усі слова із літерами:" />
+            <Label layoutX="442.0" layoutY="169.0" text="у кінці латинського алфавіту" />
+            <Label layoutX="459.0" layoutY="189.0" text="з порядком: 'z' 'yz' 'xyz'" />
+         </children></Pane>
+   </children>
+</AnchorPane>

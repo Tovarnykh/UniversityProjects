@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainpage" prefHeight="533.0" prefWidth="800.0" style="-fx-background-image: url(https://nuft.edu.ua/assets/images/News/2019/07/12/top-20-1-12-07-2019.jpg);" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.unilabsoop.LabsController">
+   <children>
+     <MenuBar prefHeight="25.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+       <menus>
+         <Menu mnemonicParsing="false" text="Меню">
+           <items>
+             <MenuItem mnemonicParsing="false" onAction="#onCloseClicked" text="Close" />
+
+           </items>
+         </Menu>
+         <Menu mnemonicParsing="false" text="Лабораторні">
+           <items>
+                  <MenuItem mnemonicParsing="false" onAction="#onCourseWork" text="Курсова Робота" />
+             <MenuItem mnemonicParsing="false" onAction="#onItemLab1Click" text="Лабораторна №1" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab2Click" text="Лабораторна №2" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab3Click" text="Лабораторна №3" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab4Click" text="Лабораторна №4" />
+                  <Menu mnemonicParsing="false" text="Лабораторна №5">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#onItemLab5_1Click" text="Лабораторна №5.1" />
+                        <MenuItem mnemonicParsing="false" onAction="#onItemLab5_2Click" text="Лабораторна №5.2" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab6" text="Лабораторна №6" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab7" text="Лабораторна №7" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab8" text="Лабораторна №8" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab9" text="Лабораторна №9" />
+           </items>
+         </Menu>
+       </menus>
+     </MenuBar>
+      <Pane layoutX="22.0" layoutY="47.0" prefHeight="464.0" prefWidth="758.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a7acb0ed" height="464.0" stroke="BLACK" strokeType="INSIDE" width="758.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9e9e9e" height="84.0" layoutX="423.0" layoutY="108.0" opacity="0.38" stroke="BLACK" strokeType="INSIDE" width="220.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9e9e9e" height="84.0" layoutX="125.0" layoutY="108.0" opacity="0.38" stroke="BLACK" strokeType="INSIDE" width="220.0" />
+            <Button layoutX="333.0" layoutY="383.0" mnemonicParsing="false" onMouseClicked="#onLab2ButtonClick" prefHeight="44.0" prefWidth="93.0" text="Обчислити" />
+            <TextField fx:id="atextfieldl2" layoutX="168.0" layoutY="153.0" prefHeight="25.0" prefWidth="23.0" promptText="a" />
+            <TextArea fx:id="ansarea2" layoutX="237.0" layoutY="218.0" prefHeight="147.0" prefWidth="296.0" promptText="Відповідь" />
+            <Label layoutX="246.0" layoutY="23.0" text="Лабораторна Робота №2" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <RadioButton fx:id="tougle1" layoutX="203.0" layoutY="77.0" mnemonicParsing="false" text="Завдання 1" textFill="#dddddd" />
+            <Separator layoutX="382.0" layoutY="85.0" orientation="VERTICAL" prefHeight="112.0" prefWidth="0.0" />
+            <RadioButton fx:id="tougle2" layoutX="482.0" layoutY="77.0" mnemonicParsing="false" text="Завдання 2" textFill="#dddddd" />
+            <Label layoutX="440.0" layoutY="117.0" text="k=(0,273ln5)1,13ln3" textFill="WHITE" />
+            <Label layoutX="440.0" layoutY="137.0" text="p=arctg(sin0,75)lg*sqrt(3)" textFill="WHITE" />
+            <Label layoutX="440.0" layoutY="161.0" text="l=7k-8p/|k-p|" textFill="WHITE" />
+            <Label layoutX="134.0" layoutY="121.0" prefHeight="25.0" prefWidth="230.0" text="Рішення рівняння ax^2 + bx +c &gt; 0" textFill="WHITE" />
+            <TextField fx:id="btextfieldl2" layoutX="226.0" layoutY="153.0" prefHeight="25.0" prefWidth="23.0" promptText="b" />
+            <TextField fx:id="ctextfieldl2" layoutX="285.0" layoutY="153.0" prefHeight="25.0" prefWidth="23.0" promptText="c" />
+         </children></Pane>
+   </children>
+</AnchorPane>

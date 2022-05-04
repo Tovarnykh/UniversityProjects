@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainpage" prefHeight="533.0" prefWidth="800.0" style="-fx-background-image: url(https://nuft.edu.ua/assets/images/News/2019/07/12/top-20-1-12-07-2019.jpg);" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.unilabsoop.LabsController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1" height="477.0" layoutX="14.0" layoutY="28.0" opacity="0.93" stroke="#cdcdcd" strokeType="INSIDE" width="738.0" />
+      <Button layoutX="362.0" layoutY="340.0" mnemonicParsing="false" onAction="#loginButtonClicked" prefHeight="39.0" prefWidth="76.0" text="Увійти" />
+      <TextField fx:id="loginfield" layoutX="297.0" layoutY="167.0" prefHeight="39.0" prefWidth="207.0" promptText="Login">
+         <font>
+            <Font size="17.0" />
+         </font></TextField>
+      <Label fx:id="badlabel" layoutX="292.0" layoutY="302.0" textFill="#ff1f1f">
+         <font>
+            <Font name="Bodoni MT" size="16.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordfield" layoutX="297.0" layoutY="247.0" prefHeight="39.0" prefWidth="207.0" promptText="Password">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

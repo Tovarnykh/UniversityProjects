@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainpage" prefHeight="533.0" prefWidth="800.0" style="-fx-background-image: url(https://nuft.edu.ua/assets/images/News/2019/07/12/top-20-1-12-07-2019.jpg);" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.unilabsoop.LabsController">
+   <children>
+     <MenuBar prefHeight="25.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+       <menus>
+         <Menu mnemonicParsing="false" text="Меню">
+           <items>
+             <MenuItem mnemonicParsing="false" onAction="#onCloseClicked" text="Close" />
+
+           </items>
+         </Menu>
+         <Menu mnemonicParsing="false" text="Лабораторні">
+           <items>
+                  <MenuItem mnemonicParsing="false" onAction="#onCourseWork" text="Курсова Робота" />
+             <MenuItem mnemonicParsing="false" onAction="#onItemLab1Click" text="Лабораторна №1" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab2Click" text="Лабораторна №2" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab3Click" text="Лабораторна №3" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab4Click" text="Лабораторна №4" />
+                  <Menu mnemonicParsing="false" text="Лабораторна №5">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#onItemLab5_1Click" text="Лабораторна №5.1" />
+                        <MenuItem mnemonicParsing="false" onAction="#onItemLab5_2Click" text="Лабораторна №5.2" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab6" text="Лабораторна №6" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab7" text="Лабораторна №7" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab8" text="Лабораторна №8" />
+                  <MenuItem mnemonicParsing="false" onAction="#onItemLab9" text="Лабораторна №9" />
+           </items>
+         </Menu>
+       </menus>
+     </MenuBar>
+      <Pane layoutX="22.0" layoutY="47.0" prefHeight="464.0" prefWidth="758.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a7acb0ed" height="464.0" stroke="BLACK" strokeType="INSIDE" width="758.0" />
+            <Label layoutX="240.0" layoutY="14.0" text="Лабораторна Робота №9" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Button layoutX="644.0" layoutY="19.0" mnemonicParsing="false" onMouseClicked="#FileOpenButtonClick" prefHeight="25.0" prefWidth="68.0" text="Огляд" />
+            <TextField fx:id="zadaiterozdilfield" layoutX="589.0" layoutY="312.0" prefHeight="25.0" prefWidth="123.0" promptText="Задайте розділ" />
+            <Button layoutX="625.0" layoutY="393.0" mnemonicParsing="false" onMouseClicked="#search2ButtonClick" text="пошук" />
+            <TextField fx:id="vidanafteryearfield" layoutX="589.0" layoutY="353.0" prefHeight="25.0" prefWidth="123.0" promptText="Видання після року" />
+            <Separator layoutX="568.0" layoutY="294.0" orientation="VERTICAL" prefHeight="131.0" prefWidth="0.0" />
+            <TextField fx:id="authorfield8" layoutX="46.0" layoutY="19.0" prefHeight="25.0" prefWidth="117.0" promptText="Пошук за автором" />
+            <Button layoutX="162.0" layoutY="19.0" mnemonicParsing="false" onMouseClicked="#searchButtonClick" opacity="0.86" prefHeight="25.0" prefWidth="58.0" text="пошук" />
+            <Button layoutX="563.0" layoutY="19.0" mnemonicParsing="false" onMouseClicked="#twoyearsButtonClick" text="За 2 роки" />
+            <TextArea fx:id="ans81" layoutX="46.0" layoutY="82.0" prefHeight="200.0" prefWidth="149.0" />
+            <TextArea fx:id="ans82" layoutX="195.0" layoutY="82.0" prefHeight="200.0" prefWidth="172.0" />
+            <TextArea fx:id="ans83" layoutX="367.0" layoutY="82.0" prefHeight="200.0" prefWidth="123.0" />
+            <TextArea fx:id="ans84" layoutX="490.0" layoutY="82.0" prefHeight="200.0" prefWidth="222.0" />
+         </children></Pane>
+   </children>
+</AnchorPane>
